@@ -11,6 +11,7 @@ const TodoPath = require("./Server/Routes/Todo");
 mongoose.connect(
 "mongodb://localhost/todo_db"
 );
+
 mongoose.Promise = global.Promise;
 app.use(bodyParser.json());
 
